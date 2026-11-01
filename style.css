@@ -1,0 +1,459 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background:white;
+    color: green;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+header {
+    background: darkgreen;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.15);
+}
+
+.navbar {
+    max-width: 1800px;
+    margin: auto;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+}
+
+.logo-area img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+.logo-area h2 {
+    font-size: 20px;
+}
+
+.logo-area small {
+    color: #b7e4c7;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #86efac;
+}
+
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+	padding: 90px 8%;
+    background-image:url(images7.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 650px;
+    padding: 70px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    color: white;
+}
+
+.hero-content {
+    max-width: 650px;
+    
+}
+
+.welcome {
+    color: #86efac;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #86efac;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.hero-image img {
+    width: 600px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 25px;
+
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn,
+.btn-outline {
+    padding: 14px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn {
+    background: white;
+    color: #065f46;
+}
+
+.btn:hover {
+    background: #86efac;
+}
+
+.btn-outline {
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: #065f46;
+}
+
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+
+.section-title p {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    margin-top: 8px;
+	color: white;
+}
+
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+	background-image:url(images6.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 90px 8%;  
+    color: white;
+}
+
+.about-content {
+    max-width: 1100px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.about-image {
+    width: 50%;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.about-text {
+    width: 50%;
+}
+
+.about-text h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: White;
+}
+
+.about-text p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 15px;
+
+    color: White;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* =========================
+   PROGRAM CARDS
+========================= */
+
+.program {
+    padding: 90px 8%;
+    background: #064e3b;
+    color: white;
+}
+
+.cards {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 30px 20px;
+
+    text-align: center;
+
+    border-radius: 18px;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #065f46;
+    margin-bottom: 10px;
+}
+
+.card p {
+    line-height: 1.6;
+    color: #555;
+}
+
+
+/* =========================
+   WHY CHOOSE
+========================= */
+
+.why {
+    padding: 90px 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 50px;
+
+    background: #064e3b;
+    color: white;
+}
+
+.why-text {
+    max-width: 550px;
+}
+
+.why-text > p {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.why h2 {
+    font-size: 38px;
+    margin: 15px 0 25px;
+}
+
+.why h2 span {
+    color: #86efac;
+}
+
+.why ul {
+    list-style: none;
+}
+
+.why li {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+.why-image img {
+    width: 450px;
+    border-radius: 20px;
+}
+
+
+/* =========================
+   VIDEO
+========================= */
+
+
+
+.video-section {
+	padding: 90px 8%;
+    background-image:url(images5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* =========================
+   LINKS
+========================= */
+
+
+.contact {
+    padding:10px ;
+}
+
+
+
+.top {
+    display: inline-block;
+    margin-top: 25px;
+    color: white;
+    font-weight: bold;
+	font-size: 20px;
+	line-height: 5px;	
+}
+
+
+.top:hover {
+    color: gray;
+}
+
+
+.links {
+    padding: 90px 8%;
+    background-image:url(images8.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;	
+    text-align: center;
+    background-position: center;
+    background-size: cover;		
+}
+
+
+.links h2 {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.links p {
+    color: white;
+    margin-bottom: 25px;
+}
+
+.link-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+	padding: 2%;
+}
+
+.link-buttons a {
+    background: red;
+    color: rgb(215, 198, 198);
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.link-buttons a:hover {
+    background: white;
+    color: #111fed;
+    transform: translateY(-3px);
+}
+	
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 25px;
+    text-align: center;
+    background: black;
+    color: White;
+    font-size: 13px;
+}
+
+footer p {
+    margin: 10px;
+}
